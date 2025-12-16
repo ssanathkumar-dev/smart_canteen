@@ -1,3 +1,5 @@
+# Smart_Canteen
+
 Smart Canteen – College Food Service System
 A web-based food ordering and management platform designed for college canteens, allowing students to browse menus, place orders, and track their food in real time, while canteen staff can manage orders, menu items, and stock efficiently through a secure admin dashboard.
 
@@ -15,4 +17,4 @@ Storage: LocalStorage for cart, orders, and images (no database needed for demo)
 Styling: CSS Grid, Flexbox, CSS Variables, Glassmorphism effects
 Tools: Git, VS Code, Live Server
 
-# Smart_Canteen
+
