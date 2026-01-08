@@ -2,6 +2,9 @@
 document.addEventListener('DOMContentLoaded', function() {
     console.log('Smart Canteen loaded');
     
+    // --- BUG FIX: Uncomment the line below ONCE if images are still broken on the dashboard, then re-comment it ---
+    // localStorage.removeItem('canteenFoodImages'); 
+
     // Initialize cart
     if (!localStorage.getItem('cart')) {
         localStorage.setItem('cart', JSON.stringify([]));
@@ -41,8 +44,8 @@ function setupOrderButtons() {
     orderButtons.forEach(button => {
         button.addEventListener('click', function() {
             const itemName = this.getAttribute('data-item') || 
-                           this.closest('.menu-item')?.querySelector('h3')?.textContent || 
-                           'Food Item';
+                             this.closest('.menu-item')?.querySelector('h3')?.textContent || 
+                             'Food Item';
             const price = this.getAttribute('data-price') || '0';
             
             addToCart(itemName, price);
